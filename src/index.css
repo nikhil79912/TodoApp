@@ -1,13 +1,176 @@
+*{
+  margin:0;
+  padding:0;
+
+}
 body {
+  background-color: green;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:white orange;
+  background-image: url("https://th.bing.com/th/id/OIP.KYfiiybdP-bbeXooDznMDAHaE7?pid=ImgDet&w=2738&h=1825&rs=1");
+  background-size: auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* .container{
+  padding: auto;
+  
+  margin: auto;
+  padding:0 1rem; 
+  border-radius: 20px; 
+  /* background-color: red; */
+  /* margin-left:50px ; */ 
+  
+/* } */
+.container {
+  max-width: 500px; /* Set maximum width for the container */
+  margin-left: auto; /* Center the container horizontally */
+  margin-right: auto; /* Center the container horizontally */
+  padding: 20px; /* Add padding to the container */
 }
+
+h1{
+  
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  margin-top: .5rem;
+  text-align:center;
+  margin-bottom: 10px;
+  font-family: var(--major-2xl-font-family,var(--font-family-heading));
+  font-weight: var(--major-2xl-font-weight,var(--major-font-weight));
+  font-size: 50px;
+  font-weight: var(--font-weight,500);
+  z-index: -1;
+  color: #0056b3;
+
+  /* position: fixed; */
+}
+
+h2{
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  /* margin-top: 0.5rem; */
+  margin-top: .5rem;
+  text-align:center;
+  margin-bottom: 100px;
+  font-family: var(--major-2xl-font-family,var(--font-family-heading));
+  font-weight: var(--major-2xl-font-weight,var(--major-font-weight));
+  font-size: 35px;
+  font-weight: var(--font-weight,500);
+  z-index: -1;
+  /* position: fixed; */
+}
+h4{
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  /* margin-top: 0.5rem; */
+  margin-top: 5rem;
+  text-align:center;
+  margin-bottom: 2px;
+  font-family: var(--major-2xl-font-family,var(--font-family-heading));
+  font-weight: var(--major-2xl-font-weight,var(--major-font-weight));
+  font-size: 25px;
+  font-weight: var(--font-weight,500);
+  z-index: -1;
+  margin-top: 0;
+  margin-bottom: revert;
+  font-weight: 500;
+  line-height: 1.2;
+
+  /* position: fixed; */
+}
+.top{
+  margin-top: 1rem;
+  display:flex;
+  gap:1rem;
+  /* justify-content:center; */
+
+}
+
+input{
+  
+  border:none;
+  outline:none;
+  width: 480px;
+  height: 45px;
+  padding:0 0.5rem;
+  border:2px solid #000;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 120%;
+  /* font-style:italic; */
+  font-family: '';
+  align-items: center;
+  
+}
+ .add{ 
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* background-color: #000; */
+  /* color:#fff;
+  padding:0.5rem 1.5rem;
+  cursor:pointer;
+ 
+  /* border-radius: 10px;
+  position: fixed; */ 
+  height:30px;
+}
+
+.todo{
+  text-align: justify;
+  text-transform: uppercase;
+  height:35px;
+  /* width: 1200px; */
+  position: relative;
+  margin-top: 1.3rem;  background-color:grey;  color:#fff;
+  padding:1.5rem 2rem;
+  border-radius: 10px;
+  font-size: 100%;
+  margin-bottom: 1px ;
+  display: flex;
+
+  /* justify-content: center; */
+  align-items: center;
+  /* height: 100vh; */
+  /* box-shadow: #000; */
+  /* font-family: var(--major-2xl-font-family,var(--font-family-heading));
+  font-weight: var(--major-2xl-font-weight,var(--major-font-weight)); */
+
+}
+.icons{
+  position: absolute;
+  top: 50%;
+  transform:translateY(-50%);
+  right:20px;
+  gap:0.5rem;
+  display: flex;
+}
+.icon{
+  cursor:pointer;
+  font-size: 20px;
+}
+.icon:hover{
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .container {
+      max-width: 100%;
+      box-shadow: #000;
+      box-shadow: 10px;
+      
+      
+  }
+  h4{
+    display: block;
+    font-size: 20px;
+   
+
+  }
+  h2{
+    margin-bottom: 10px;
+} }
+
+
